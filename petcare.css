@@ -1,0 +1,940 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+}
+.top-container::before, .top-container::after,.top-nav::before, .top-nav::after,.ac::before, .ac::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+body{
+    font-family: 'DM Sans', sans-serif;
+    font-family: 'Nunito', sans-serif;
+}
+.top-container{
+
+    background: #0094DF;
+}
+
+.top-nav{
+    max-width: 1200px;
+    background: #0094DF;
+    margin: auto;
+    font-family: 'DM Sans', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+
+.top-nav i{
+   color: white;
+   padding: 12px;
+}
+
+.nav-icons{
+    float: left;
+}
+
+.ac{
+    float: right;
+}
+
+.ac a{
+  color: white;
+  text-decoration: none;
+}
+
+.address{
+    float: left;
+    padding-right: 10px;
+
+}
+
+.contact{
+    float: left;
+
+}
+
+
+
+@media (max-width:575px){
+
+    .top-container{
+            display: none;
+            padding: 15px 0 15px 20px;
+    }
+}
+
+
+/* top-navbar are ended here and a new nev menu will start from here */
+
+.nav-container-in::before, .nav-container-in::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.bg{
+    background-image: url(dog.webp);
+    height: 312px;
+    max-width: 100%;
+    height: 870px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    
+}
+
+
+.nav-container{
+  
+    width: 100%;
+    position: sticky;
+    z-index: 10000;
+    background: white;
+    scroll-behavior: smooth;
+    /* box-shadow: 3px 3px 5px rgb(146, 141, 141) , 3px 3px 5px rgb(185, 174, 174); */
+
+}
+@media (min-width:1500){
+    .nav-container{
+       
+
+    }
+}
+
+.nav-container-in{
+   
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-family: 'DM Sans', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    position: relative;
+
+}
+
+.nav-logo img{
+    padding:15px ;
+
+}
+
+.nav-menu{
+    display: flex;
+   
+    flex-grow: 1;
+    justify-content: flex-end;
+}
+
+.nav-menu a{
+
+    text-decoration: none;
+    padding: 27px 4px 27px 4px;
+    font-family: 'DM Sans', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    font-size: 16px;
+    color: #023C5A;
+    margin-right: 37px;
+    font-weight: bold;
+}
+
+
+.nav-menu a:hover{
+
+    color: #ffbd09;
+}
+
+.get{
+    background: #e83e8c;
+    border-radius: 50px;
+    padding: 10px 20px 10px 20px;
+}
+
+
+
+
+
+
+
+/*  */
+
+
+.bar{
+   display: none;
+   flex-grow: 1;
+   justify-content: flex-end;
+}
+
+
+
+
+.bar-in i{
+    font-size: 25px;
+    color: black;
+    padding: 25px 0 0 0 ;
+}
+
+@media (max-width:768px){
+    
+
+
+    .nav-menu{
+            /* display: none; */
+           
+    }
+
+    
+    .nav-logo{
+       width: 100%;
+       display: block;
+    }
+
+
+}
+
+
+.bg-container{
+    max-width: 1200px;
+    margin: auto;
+    padding-left: 15px;
+    font-family: 'DM Sans', sans-serif;
+    font-family: 'Nunito', sans-serif;
+  
+}
+
+.content {
+    max-width: 50%;
+}
+
+.content h1{
+ font-family: 'Fredoka One', cursive;
+font-weight: 400;
+font-size: 4.2rem;
+line-height: 1.2;
+display: inline-block;
+color: #023C5A;
+}
+
+.content p{
+    font-family: 'DM Sans', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    color: #023C5A;
+    max-width: 90%;
+    margin: 20px 0 30px 0;
+}
+
+.button{
+background: #e83e8c;
+display: inline-block;
+padding: 15px 30px 15px 30px;
+border-radius: 10px;
+
+}
+
+.button a{
+    text-decoration: none;
+    color: white;
+    font-weight: 800;
+    font-size: 16px;
+
+    
+}
+
+@media (max-width:768px) {
+   .nav-menu{
+    flex: none;
+    position: absolute;
+    top: 100%;
+    flex-direction: column;
+    line-height: 0;
+    z-index: 100;
+    background: #4c4c4c;
+    width: 768px;
+    left: 0;
+    padding: 15px 0 15px 20px;
+    display: none;
+   
+}
+
+.nav-menu a{
+    padding-left: 15px;
+    color: white;
+}
+.bg{
+    width: 768px;
+    height: 485px;
+
+}
+
+
+.content h1{
+    font-family: 'Fredoka One', cursive;
+   font-weight: 400;
+   font-size: 3rem;
+   line-height: 1.2;
+   display: inline-block;
+   color: #023C5A;
+   }
+   
+   .content p{
+       font-family: 'DM Sans', sans-serif;
+       font-family: 'Nunito', sans-serif;
+       font-weight: 800;
+       font-size: 15px;
+       color: #023C5A;
+       max-width: 90%;
+
+       margin:20px 0  30px 0;
+   }
+   
+   .button{
+   background: #e83e8c;
+   display: inline-block;
+   padding: 12px 25px 12px 25px;
+   border-radius: 10px;
+   
+   }
+   
+   .button a{
+       text-decoration: none;
+       color: white;
+       font-weight: 800;
+       font-size: 16px;
+   
+       
+   }
+
+   .bar{
+    display: flex;
+    margin-right: 15px;
+  
+ }
+
+ /* .nav-container-in:hover, .nav-menu{
+     display: flex;
+     
+ } */
+ 
+ /* .nav-container:hover,.nav-menu{
+    display: flex;
+
+} */
+
+
+
+}
+
+@media (max-width:425px) {
+    .nav-menu{
+     flex: none;
+     position: absolute;
+     top: 100%;
+     flex-direction: column;
+     line-height: 0;
+     z-index: 100;
+     background: #4c4c4c;
+     max-width: 885px;
+     left: 0;
+     display: none;
+    
+ }
+ 
+ .nav-menu a{
+     padding-left: 15px;
+     color: white;
+ }
+ .bg{
+     width: 425px;
+     height: 330px;
+ 
+ }
+ 
+ 
+ .content h1{
+     font-family: 'Fredoka One', cursive;
+    font-weight: 400;
+    font-size: 1.5rem;
+    display: inline-block;
+    color: #023C5A;
+    }
+    
+    .content p{
+        font-family: 'DM Sans', sans-serif;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 800;
+        font-size: 12px;
+        color: #023C5A;
+        max-width: 90%;
+ 
+        margin:15px 0  30px 0;
+    }
+    
+    .button{
+    background: #e83e8c;
+    display: inline-block;
+    padding: 10px 22px 10px 22px;
+    border-radius: 10px;
+    
+    }
+    
+    .button a{
+        text-decoration: none;
+        color: white;
+        font-weight: 800;
+        font-size: 16px;
+    
+        
+    }
+ 
+    .bar{
+     display: flex;
+   
+  }
+  
+ 
+ }
+
+ /* our pet swervicees */
+
+ .pet-container h1{
+    font-family: 'Fredoka One', cursive;
+    text-align: center;
+    margin-top: 100px;
+    padding: 50px;
+    color: #023C5A;
+
+
+ }
+
+ .pet-services{
+     display: flex;
+     justify-content: space-between;
+     margin-top: 30px;
+     box-sizing: border-box;
+ }
+
+ .pet-services img{
+            max-width: 100%;
+            /* max-height: 380px; */
+}
+
+
+ .pet-wrapper{
+     max-width: 1200px;
+     padding: 0 15px  0 15px;
+     margin: auto;
+     box-sizing: border-box;
+ }
+
+ .img-1{
+        background: #fff;
+        width: 80%;
+        position: absolute;
+        bottom: -57px;
+        left: 33px;
+        border-radius: 10px;
+        box-shadow: 3px 3px 5px rgb(146, 141, 141) , 3px 3px 5px rgb(185, 174, 174);
+ }
+
+ .img-2{
+     background: #fff;
+     width: 80%;
+     position: absolute;
+     bottom: -57px;
+     left: 33px;
+     border-radius: 10px;
+     box-shadow: 3px 3px 5px rgb(146, 141, 141) , 3px 3px 5px rgb(185, 174, 174);
+}
+
+
+.img-3{
+    background: #fff;
+     width: 80%;
+     position: absolute;
+     bottom: -57px;
+     left: 33px;
+     border-radius: 10px;
+     box-shadow: 3px 3px 5px rgb(146, 141, 141) , 3px 3px 5px rgb(185, 174, 174);
+}
+
+
+ .img-1 h1{
+    font-family: 'Fredoka One', cursive;
+    font-size: 25px;
+    line-height: 1.5;
+    padding: 15px 30px 0 30px;
+    color: #023C5A;
+    
+    
+ }
+
+ 
+ .img-2 h1{
+    font-family: 'Fredoka One', cursive;
+    font-size: 25px;
+    line-height: 1.5;
+    padding: 15px 30px 0 30px;
+    color: #023C5A;
+ }
+
+ 
+ .img-3 h1{
+    font-family: 'Fredoka One', cursive;
+    font-size: 25px;
+    line-height: 1.5;
+    padding: 15px 30px 0 30px;
+    color: #023C5A;
+ }
+
+
+ .pet-services p{
+     width: 100%;
+     font-size: 16px;
+     padding: 15px 30px 15px 30px;
+ }
+
+ 
+ .treatment{
+    position: relative;
+    max-width: 380px;
+    max-height: 380px;
+    box-sizing: border-box;
+    margin-bottom: 150px;
+
+ }
+ 
+ .traning{
+    position: relative;
+    max-width: 380px;
+    max-height: 380px;
+    box-sizing: border-box;
+    margin-bottom: 150px;
+ }
+ 
+ .hygiene{
+    position: relative;
+    max-width: 380px;
+    max-height: 380px;
+    box-sizing: border-box;
+    margin-bottom: 150px;
+
+ }
+
+ /*             */
+.dog-paw{
+    background-image: url(bg-paw.webp);
+    width: 100%;
+    
+}
+
+ .video-content{
+     max-width: 1200px;
+     box-sizing: border-box;
+     margin: auto;
+     display: flex;
+     justify-content: space-between;
+     padding-bottom:100px; 
+ }
+
+ .video-container{
+    max-width: 50%;
+
+
+ }
+
+ .video-text{
+    max-width: 50%;
+
+ }
+
+ 
+ .video-text h1{
+    font-family: 'Fredoka One', cursive;
+    margin-top: 50px;
+    max-width: 70%;
+    padding: 10px;
+    font-size: 40px;
+    color: #023C5A;
+
+ }
+
+ .video-text p{
+    padding: 10px;
+    box-sizing: border-box;
+    line-height: 1.7;
+    max-width: 70%;
+    margin: 30px 0 30px 0;
+     font-size: 17px;
+     font-weight: bold;
+   
+
+ }
+
+
+ .video-text a{
+     padding: 15px;
+     background: #FF3E7E;
+     border-radius: 20px;
+     text-decoration: none;
+     padding: 13px 30px 13px 30px;
+     color: white;
+     font-weight: bold;
+     font-size: 17px;
+
+ }
+
+ .video-container iframe{
+     border: 2px solid green;
+     border-radius: 20px;
+     overflow: hidden;
+ }
+
+
+ /*              */
+
+.dog-container{
+    box-sizing: border-box;
+}
+ .dog{
+     position: relative;
+    
+
+ }
+
+ .dog-in{
+     max-width: 1200px;
+ }
+ .emergency-care{
+     position: absolute;
+     background: #fff;
+    width: 360px;
+    box-sizing: border-box;
+    height: 430px;
+     top: 100px;
+     left: 100px;
+     border-radius: 20px;
+
+ }
+
+ .em-logo{
+     color: #0094DF;
+ }
+
+ .emergency-care h1{
+    font-family: 'Fredoka One', cursive;
+    margin-top: 30px;
+    font-weight: 400;
+    font-size: 40px;
+    padding-left: 40px;
+    color: #023C5A;
+ }
+
+ .emergency-care p{
+     padding-left: 40px;
+     line-height: 2;
+     margin: 20px 0 30px 0;
+     font-weight: bold;
+ }
+
+.contact-no a{
+     padding: 10px 20px 10px 20px;
+     background: #FF3E7E;
+     border-radius: 20px ;
+     text-decoration: none;
+     font-size: 20px;
+     font-weight: bold;
+     color: #fff;
+
+   
+   
+ }
+
+ .contact-no{
+    margin-left: 40px;
+    margin-top: 50px;
+ }
+
+
+
+ .child-content{
+        margin-top: 100px;
+        position: relative;
+        padding-bottom: 100px;
+
+ }
+
+ .child-container{
+    max-width: 1200px;
+    margin: auto;
+
+ }
+
+ .child-image{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+
+ }
+
+ .child-text p{
+   
+   width: 71%;
+    font-weight: 400;
+    font-size: 25px;
+    padding: 0px;
+    color: #023C5A;
+    text-align: center;
+    line-height: 1.5;
+ }
+
+ .child-text{
+    font-family: 'Fredoka One', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+ }
+
+ .name{
+     display: flex;
+     justify-content: center;
+     margin-top: 50px;
+     box-sizing: border-box;
+    
+ }
+
+ .name h1{
+    font-family: 'Fredoka One', cursive;
+    font-weight: 400;
+    font-size: 25px;
+    padding: 0px;
+    color: #0094DF;
+    text-align: center;
+    line-height: 1.5;
+   
+}
+
+ .x-dog{
+     position: absolute;
+     right: -75px;
+     bottom: 100px;
+
+ }
+#t{
+     position: absolute;
+     bottom: 70px;
+     left: 45.2%;
+     font-size:17px;
+
+ }
+
+ .donation-box{
+     background-image: url(section_bg03.jpg.webp);
+
+ }
+
+ .donation-content h1{
+    font-family: 'Fredoka One', cursive;
+    font-weight: 400;
+    font-size: 40px;
+    padding: 0px;
+    color: #fff;
+    text-align: center;
+    line-height: 1.5;
+    padding: 20px;
+
+ }
+
+ 
+ .donation-content p{
+   margin-left: 23%;
+    font-weight: 400;
+    font-size: 20px;
+    width: 55%;
+    color: #fff;
+    text-align: center;
+    line-height: 1.5;
+    padding: 10px;
+
+ }
+
+.donation-btn{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 73px;
+
+
+}
+
+
+.donation-btn a{
+    padding: 15px 25px 15px 25px;
+    background-color: #FF3E7E;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 17px;
+    margin-left: 32px;
+    border: 2px solid white;
+
+    
+}
+
+.donation-btn a:nth-last-child(1) {
+    background: transparent;
+}
+
+.donation-btn a:hover {
+    background: #fff;
+    color: #FF3E7E;
+    transition: 0.5s;
+}
+
+
+
+/*               */
+
+
+.last-container{
+    background-image: url(bg-paw.webp);
+    padding-top: 100px;
+    width: 100%;
+    background: black;
+
+}
+
+.one-container{
+    box-sizing: border-box;
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+    justify-content: space-between;
+}
+
+
+.common{
+    width: 280px;
+    height: 400px;
+
+}
+
+.iconic{
+    max-width: 50%;
+    display: flex;
+    color: #fff;
+    justify-content: space-between;
+    margin-top: 15px;
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+
+
+.two-b{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.three-c{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+.four-d{
+    display: flex;
+    flex-direction: column;
+}
+
+.two-b h2{
+    font-family: 'Fredoka One', cursive;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.5;
+    padding: 10px;
+    color: #FF3E7E;
+
+}
+
+.two-b a{
+    text-decoration: none;
+    padding: 10px;
+    font-weight: bold;
+    color: rgb(23, 241, 23);
+  
+
+}
+
+.three-c a{
+    text-decoration: none;
+    padding: 10px;
+    font-weight: bold;
+    color: rgb(23, 241, 23);
+}
+
+.three-c h2{
+    font-family: 'Fredoka One', cursive;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 1.5;
+    padding: 10px;
+    color: #FF3E7E;
+
+}
+
+
+.three-c a:hover{
+    border-bottom: 2px solid #FF3E7E;
+}
+
+.two-b a:hover{
+    border-bottom: 2px solid #FF3E7E;
+}
+
+.one-a p{
+    color: rgb(23, 241, 23);
+    padding: 10px;
+    font-weight: bold;
+}
+
+.four-d p{
+    color: rgb(23, 241, 23);
+    padding: 10px;
+    font-weight: bold;
+
+}
+
+.four-d h2{
+    font-family: 'Fredoka One', cursive;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 1.5;
+    padding: 10px;
+    color: #FF3E7E;
+
+}
+
+.four-d input{
+    padding: 10px;
+    margin:20px 0 0 10px;
+    border-bottom: 5px solid #FF3E7E;
+}
+
+
+
